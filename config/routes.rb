@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
 
+  get '/signup', to: 'users#new'
+
   get '/contact', to: 'pages#contact'
   get '/about', to: 'pages#about'
 
@@ -17,6 +19,7 @@ Rails.application.routes.draw do
 
   # Example resource route (maps HTTP verbs to controller actions automatically):
   #   resources :products
+  resources :users
 
   # Example resource route with options:
   #   resources :products do

@@ -39,7 +39,7 @@ gem 'capybara'
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
-
+  gem 'annotate', '~> 2.6.6'
   gem 'rspec-rails', '~> 3.0'
 
   # Access an IRB console on exception pages or by using <%= console %> in views
